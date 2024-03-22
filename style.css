@@ -1,85 +1,96 @@
-body{
-    background-color: #f4f4f4;
-    color: black;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 18px;
+*{
+    box-sizing: border-box;
+    margin = 10px;
+    padding = 10px;
+}
 
-    line-height: 1.5em;
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(251, 251, 251);
+    background-color: rgb(42, 43, 43);
+    align-content:space-around;
+    padding-top: 10px;
 }
-.name{
-   
-    font: normal 18px, 'Times New Roman', Times, serif;
-    background-color: orange;
-    line-height: 1.3em;
-    height: 130px;
-    margin-top: 20px;
-    border-radius: 15px;
-    border: 1px solid;
 
-    padding: 10px 10px 10px 10px;
+.flex-container{
+    display: flex;
+    justify-content:center;
+    min-height: 300px
 }
-.academic{
-    float: left;
-    width: 33.3%;
-    padding: 10px;
-    border: 1px solid;
-    border-top: 0px;
-    border-bottom: 0px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+
+.about {
+    width: 500px;
+    background-color: rgb(35, 40, 40);
+    color: azure;
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 1.6;
+    border-radius: 5%;
+    box-shadow: 0 0 5px 5px rgb(51, 51, 51);
+    min-height: 300px
 }
-.academic h4{
+.academic {
+    width: 1100px;
+    min-height: 300px;
+    background-color: rgb(35, 40, 40);
+    color: azure;
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 1.8;
+    border-radius: 5%;
+    box-shadow: 0 0 5px 5px rgb(51, 51, 51);
+    font-size: large;
     text-align: center;
+    word-spacing: 7px;   
 }
-.ps{
-    float: left;
-    width: 33.3%;
-    height: 320px;
-    border: 1px solid;
-    border-top: 0px;
-    border-bottom: 0px;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+
+.skill {
+    width: 500px;
+    background-color: rgb(35, 40, 40);
+    color: azure;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 1.6;
+    border-radius: 5%;
+    box-shadow: 0 0 5px 5px rgb(51, 51, 51);
+    min-height: 300px
 }
-.ps h4{
-    text-align: center;
-}
-.project{
-    float: left;
-    width: 50%;
-    border: 1px solid;
- 
-    padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
-.project h4{
-    text-align: center;
-}
-.achievement{
-    width: 50%;
-    border: 0px solid;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.skill{
-    width: 50%;
-    border: 0px solid;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.box-1{
-    width: 100%;
-    border: 1px solid;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
-.box2{
-    width: 100%;
-    border: 1px solid;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+
+.project {
+    width: 1100px;
+    min-height: 300px;
+    background-color: rgb(35, 40, 40);
+    color: azure;
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 1.8;
+    border-radius: 5%;
+    box-shadow: 0 0 5px 5px rgb(51, 51, 51);
+
+    word-spacing: 7px;
 }
