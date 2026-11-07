@@ -560,6 +560,22 @@
       font-weight: 600;
     }
 
+    .photo-card {
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 20px;
+  overflow: hidden;
+  background: #050505;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.photo-card-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;          /* portrait; use 1 / 1 for square, 16 / 10 for wide */
+  object-fit: cover;
+  object-position: center top;  /* adjust (e.g. center 20%) if your face is cropped */
+  display: block;
+}
+
     /* SCROLL INDICATOR */
 
     .scroll-indicator {
@@ -1578,7 +1594,7 @@
 
       <!-- RIGHT: VISUAL ELEMENT & CODE TERMINAL -->
 
-      <div class="hero-visual">
+      <!-- <div class="hero-visual">
 
         <div class="hero-avatar-row">
           <div class="logo-box">
@@ -1588,7 +1604,7 @@
             <div class="avatar-title">Sabbir Sharif</div>
             <div class="avatar-subtitle">Backend Developer</div>
             <div class="avatar-location">
-              <i class="fa-solid fa-location-dot"></i> Savar, Dhaka, Bangladesh
+              <i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh
             </div>
           </div>
         </div>
@@ -1620,6 +1636,10 @@
                 Opportunities"</span></p>
             <p class="term-output">}</p>
           </div>
+        </div> -->
+
+        <div class="photo-card">
+            <img src="Photo_Professional.png" alt="Sabbir Sharif" class="photo-card-img" />
         </div>
 
       </div>
@@ -2138,7 +2158,7 @@
               </div>
               <div>
                 <small>LOCATION</small>
-                <span>Savar, Dhaka-1349, Bangladesh</span>
+                <span>Dhaka, Bangladesh</span>
               </div>
             </div>
 
