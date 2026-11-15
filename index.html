@@ -886,7 +886,117 @@
       font-weight: 700;
     }
 
-    /* 3. ACHIEVEMENTS (STACK STYLE) */
+    /* 3. RESEARCH AND PUBLICATION (STACK STYLE) */
+
+    .research-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .pub-card {
+      background: rgba(255, 255, 255, .03);
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: 24px;
+      padding: 38px 40px;
+      transition: .35s;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .pub-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 255, 255, .18);
+      box-shadow: 0 20px 40px rgba(255, 255, 255, .04);
+    }
+
+    .pub-badge-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .pub-badge {
+      font-size: .74rem;
+      letter-spacing: 1.5px;
+      color: #888;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .pub-status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      font-size: .8rem;
+      color: #4ade80;
+      font-weight: 600;
+    }
+
+    .pub-status-pill i {
+      font-size: .85rem;
+    }
+
+    .pub-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+
+    .pub-venue {
+      color: #d4d4d4;
+      font-size: .92rem;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+
+    .pub-venue i {
+      color: #9ca3af;
+      margin-top: 3px;
+      font-size: 1rem;
+    }
+
+    .pub-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .author-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 16px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .12);
+      font-size: .84rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .author-badge i {
+      color: #9ca3af;
+    }
+
+    /* 4. ACHIEVEMENTS (STACK STYLE) */
 
     .achievements-stack {
       display: flex;
@@ -1447,6 +1557,10 @@
         padding: 28px 22px;
       }
 
+      .pub-card {
+        padding: 28px 22px;
+      }
+
       .cert-card {
         padding: 22px;
       }
@@ -1493,6 +1607,7 @@
         <a href="#hero" class="nav-link">About</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#experience" class="nav-link">Experience</a>
+        <a href="#research" class="nav-link">Research</a>
         <a href="#achievements" class="nav-link">Achievements</a>
         <a href="#certifications" class="nav-link">Certifications</a>
         <a href="#contact" class="nav-link">Contact</a>
@@ -1945,7 +2060,93 @@
 
   </section>
 
-  <!-- 3. ACHIEVEMENTS & COMPETITIVE PROGRAMMING (STACK STYLE) -->
+  <!-- 3. RESEARCH AND PUBLICATION (STACK STYLE) -->
+
+  <section class="section" id="research">
+
+    <div class="container">
+
+      <div class="top">
+        <div class="title">
+          <small>// SCHOLARLY WORK &amp; PUBLICATIONS</small>
+          <h2>Research &amp; Publication</h2>
+        </div>
+      </div>
+
+      <!-- VERTICALLY STACKED PUBLICATION CARDS -->
+
+      <div class="research-stack">
+
+        <!-- PUBLICATION 1 -->
+
+        <div class="pub-card">
+
+          <div class="pub-badge-row">
+            <span class="pub-badge">// CONFERENCE PAPER</span>
+            <div class="pub-status-pill">
+              <i class="fa-solid fa-microphone-lines"></i> Accepted for Oral Presentation
+            </div>
+          </div>
+
+          <h3 class="pub-title">
+            Detecting Compensated Microcytosis: A Benchmarked and Explainable Machine Learning Approach to Tri-Class Hematological Classification
+          </h3>
+
+          <div class="pub-venue">
+            <i class="fa-solid fa-landmark"></i>
+            <span>9th International Conference on Engineering Research, Innovation, and Education (ICERIE 2027)</span>
+          </div>
+
+          <div class="pub-meta-row">
+            <div class="author-tag">
+              <span class="author-badge"><i class="fa-solid fa-user-pen"></i> 1st Author</span>
+            </div>
+            <div class="tech">
+              <span>Machine Learning</span>
+              <span>Explainable AI (XAI)</span>
+              <span>Hematological Classification</span>
+              <span>Benchmarking</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PUBLICATION 2 -->
+
+        <div class="pub-card">
+
+          <div class="pub-badge-row">
+            <span class="pub-badge">// RESEARCH PAPER</span>
+            <div class="pub-status-pill">
+              <i class="fa-solid fa-microphone-lines"></i> Accepted for Oral Presentation
+            </div>
+          </div>
+
+          <h3 class="pub-title">
+            Explainable and Parameter-Efficient Identification of Ethnic Languages in Shared Bengali Script under Low-Resource Conditions
+          </h3>
+
+          <div class="pub-meta-row">
+            <div class="author-tag">
+              <span class="author-badge"><i class="fa-solid fa-user-pen"></i> 3rd Author</span>
+            </div>
+            <div class="tech">
+              <span>Natural Language Processing</span>
+              <span>Parameter-Efficient Fine-Tuning</span>
+              <span>Explainable AI</span>
+              <span>Low-Resource NLP</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 4. ACHIEVEMENTS & COMPETITIVE PROGRAMMING (STACK STYLE) -->
 
   <section class="section" id="achievements">
 
@@ -2029,7 +2230,7 @@
 
   </section>
 
-  <!-- 4. CERTIFICATIONS (STACK STYLE) -->
+  <!-- 5. CERTIFICATIONS (STACK STYLE) -->
 
   <section class="section" id="certifications">
 
@@ -2106,7 +2307,7 @@
 
   </section>
 
-  <!-- 5. CONTACT / GET IN TOUCH (ORIGINAL 2-COLUMN SPLIT CARD) -->
+  <!-- 6. CONTACT / GET IN TOUCH (ORIGINAL 2-COLUMN SPLIT CARD) -->
 
   <section class="section" id="contact">
 
